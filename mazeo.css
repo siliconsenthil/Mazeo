@@ -43,3 +43,11 @@ table,th, td
 .blocked{
   background-color: black;
 }
+
+.route{
+  background-color: green;
+}
+
+.clash{
+  background-color: red;
+}

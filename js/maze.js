@@ -1,12 +1,14 @@
 $(document).ready(function() {
   $('#maze td').click(function(event){
     $(event.target).toggleClass('blocked')
+    Panel.clearRoute()
     Panel.display()
   }),
 
   $('#maze td').mousedown(function(){
     $('#maze td').mouseleave(function(event){
       $(event.target).toggleClass('blocked')
+      Panel.clearRoute()
       Panel.display()
     })
   }),
