@@ -2,98 +2,105 @@
   <head>
     <link type='text/css' rel='stylesheet' href='mazeo.css'/>
     <script src='js/jquery-1.4.2.min.js'></script>
+    <script src='js/maze_panel.js'></script>
     <script src='js/maze.js'></script>
   </head>
   <body>
+    <div id = 'panel'>
+      Blocked Cells:
+      <div id = 'blocked_cells'>
+      </div>
+
+    </div>
     <div class = 'table'>
       <table id = 'maze' border='1'>
         <tr id = 'row_1'>
-          <td class = 'col_1'/>
-          <td class = 'col_2'/>
-          <td class = 'col_3'/>
-          <td class = 'col_4'/>
-          <td class = 'col_5'/>
-          <td class = 'col_6'/>
-          <td class = 'col_7'/>
-          <td class = 'col_8'/>
-          <td class = 'col_9'/>
+          <td class = 'col_1' id = 'cell_1_8'/>
+          <td class = 'col_2' id = 'cell_2_8'/>
+          <td class = 'col_3' id = 'cell_3_8'/>
+          <td class = 'col_4' id = 'cell_4_8'/>
+          <td class = 'col_5' id = 'cell_5_8'/>
+          <td class = 'col_6' id = 'cell_6_8'/>
+          <td class = 'col_7' id = 'cell_7_8'/>
+          <td class = 'col_8' id = 'cell_8_8'/>
+          <td class = 'col_9' id = 'cell_9_8'/>
         </tr>
         <tr id = 'row_2'>
-          <td class = 'col_1'/
-          <td class = 'col_2'/
-          <td class = 'col_3'/>
-          <td class = 'col_4'/>
-          <td class = 'col_5'/>
-          <td class = 'col_6'/>
-          <td class = 'col_7'/>
-          <td class = 'col_8'/>
-          <td class = 'col_9'/>
+          <td class = 'col_1' id = 'cell_1_7'/>
+          <td class = 'col_2' id = 'cell_2_7'/>
+          <td class = 'col_3' id = 'cell_3_7'/>
+          <td class = 'col_4' id = 'cell_4_7'/>
+          <td class = 'col_5' id = 'cell_5_7'/>
+          <td class = 'col_6' id = 'cell_6_7'/>
+          <td class = 'col_7' id = 'cell_7_7'/>
+          <td class = 'col_8' id = 'cell_8_7'/>
+          <td class = 'col_9' id = 'cell_9_7'/>
         </tr>
         <tr id = 'row_3'>
-          <td class = 'col_1'/>
-          <td class = 'col_2'/>
-          <td class = 'col_3'/>
-          <td class = 'col_4'/>
-          <td class = 'col_5'/>
-          <td class = 'col_6'/>
-          <td class = 'col_7'/>
-          <td class = 'col_8'/>
-          <td class = 'col_9'/>
+          <td class = 'col_1' id = 'cell_1_6'/>
+          <td class = 'col_2' id = 'cell_2_6'/>
+          <td class = 'col_3' id = 'cell_3_6'/>
+          <td class = 'col_4' id = 'cell_4_6'/>
+          <td class = 'col_5' id = 'cell_5_6'/>
+          <td class = 'col_6' id = 'cell_6_6'/>
+          <td class = 'col_7' id = 'cell_7_6'/>
+          <td class = 'col_8' id = 'cell_8_6'/>
+          <td class = 'col_9' id = 'cell_9_6'/>
         </tr>
         <tr id = 'row_4'>
-          <td class = 'col_1'/>
-          <td class = 'col_2'/>
-          <td class = 'col_3'/>
-          <td class = 'col_4'/>
-          <td class = 'col_5'/>
-          <td class = 'col_6'/>
-          <td class = 'col_7'/>
-          <td class = 'col_8'/>
-          <td class = 'col_9'/>
+          <td class = 'col_1' id = 'cell_1_5'/>
+          <td class = 'col_2' id = 'cell_2_5'/>
+          <td class = 'col_3' id = 'cell_3_5'/>
+          <td class = 'col_4' id = 'cell_4_5'/>
+          <td class = 'col_5' id = 'cell_5_5'/>
+          <td class = 'col_6' id = 'cell_6_5'/>
+          <td class = 'col_7' id = 'cell_7_5'/>
+          <td class = 'col_8' id = 'cell_8_5'/>
+          <td class = 'col_9' id = 'cell_9_5'/>
         </tr>
         <tr id = 'row_5'>
-          <td class = 'col_1'/>
-          <td class = 'col_2'/>
-          <td class = 'col_3'/>
-          <td class = 'col_4'/>
-          <td class = 'col_5'/>
-          <td class = 'col_6'/>
-          <td class = 'col_7'/>
-          <td class = 'col_8'/>
-          <td class = 'col_9'/>
+          <td class = 'col_1' id = 'cell_1_4'/>
+          <td class = 'col_2' id = 'cell_2_4'/>
+          <td class = 'col_3' id = 'cell_3_4'/>
+          <td class = 'col_4' id = 'cell_4_4'/>
+          <td class = 'col_5' id = 'cell_5_4'/>
+          <td class = 'col_6' id = 'cell_6_4'/>
+          <td class = 'col_7' id = 'cell_7_4'/>
+          <td class = 'col_8' id = 'cell_8_4'/>
+          <td class = 'col_9' id = 'cell_9_4'/>
         </tr>
         <tr id = 'row_6'>
-          <td class = 'col_1'/
-          <td class = 'col_2'/
-          <td class = 'col_3'/>
-          <td class = 'col_4'/>
-          <td class = 'col_5'/>
-          <td class = 'col_6'/>
-          <td class = 'col_7'/>
-          <td class = 'col_8'/>
-          <td class = 'col_9'/>
+          <td class = 'col_1' id = 'cell_1_3'/>
+          <td class = 'col_2' id = 'cell_2_3'/>
+          <td class = 'col_3' id = 'cell_3_3'/>
+          <td class = 'col_4' id = 'cell_4_3'/>
+          <td class = 'col_5' id = 'cell_5_3'/>
+          <td class = 'col_6' id = 'cell_6_3'/>
+          <td class = 'col_7' id = 'cell_7_3'/>
+          <td class = 'col_8' id = 'cell_8_3'/>
+          <td class = 'col_9' id = 'cell_9_3'/>
         </tr>
         <tr id = 'row_7'>
-          <td class = 'col_1'/>
-          <td class = 'col_2'/>
-          <td class = 'col_3'/>
-          <td class = 'col_4'/>
-          <td class = 'col_5'/>
-          <td class = 'col_6'/>
-          <td class = 'col_7'/>
-          <td class = 'col_8'/>
-          <td class = 'col_9'/>
+          <td class = 'col_1' id = 'cell_1_2'/>
+          <td class = 'col_2' id = 'cell_2_2'/>
+          <td class = 'col_3' id = 'cell_3_2'/>
+          <td class = 'col_4' id = 'cell_4_2'/>
+          <td class = 'col_5' id = 'cell_5_2'/>
+          <td class = 'col_6' id = 'cell_6_2'/>
+          <td class = 'col_7' id = 'cell_7_2'/>
+          <td class = 'col_8' id = 'cell_8_2'/>
+          <td class = 'col_9' id = 'cell_9_2'/>
         </tr>
         <tr id = 'row_8'>
-          <td class = 'col_1'/>
-          <td class = 'col_2'/>
-          <td class = 'col_3'/>
-          <td class = 'col_4'/>
-          <td class = 'col_5'/>
-          <td class = 'col_6'/>
-          <td class = 'col_7'/>
-          <td class = 'col_8'/>
-          <td class = 'col_9'/>
+          <td class = 'col_1' id = 'cell_1_1'/>
+          <td class = 'col_2' id = 'cell_2_1'/>
+          <td class = 'col_3' id = 'cell_3_1'/>
+          <td class = 'col_4' id = 'cell_4_1'/>
+          <td class = 'col_5' id = 'cell_5_1'/>
+          <td class = 'col_6' id = 'cell_6_1'/>
+          <td class = 'col_7' id = 'cell_7_1'/>
+          <td class = 'col_8' id = 'cell_8_1'/>
+          <td class = 'col_9' id = 'cell_9_1'/>
         </tr>
     </div>
   </body>

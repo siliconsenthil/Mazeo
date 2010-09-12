@@ -1,7 +1,17 @@
+#panel
+{
+  width:390px;
+  height: 80px;
+  margin:50px auto;
+  padding:50px;
+  border:1px solid #333;
+  background-color:#fee;
+}
+
 .table
 {
   width:360px;
-  height: 500px;
+  height: 400px;
   margin:50px auto;
   padding:50px;
   border:1px solid #333;
